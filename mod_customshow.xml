@@ -30,6 +30,7 @@
 					type="text"
 					label="MOD_CUSTOMSHOW_HEAD_LABEL"
 					description="MOD_CUSTOMSHOW_HEAD_DESC"
+					required="required"
 				/>
 				<field
 					name="content"
@@ -52,18 +53,27 @@
 					type="text"
 					label="MOD_CUSTOMSHOW_OHHEAD_LABEL"
 					description="MOD_CUSTOMSHOW_OHHEAD_DESC"
+					required="required"
 				/>
 				<field
 					name="ohcontent"
 					type="textarea"
 					label="MOD_CUSTOMSHOW_OHCONTENT_LABEL"
-					description="MOD_CUSTOMSHOW_OHCONTENT_DESC"
+					description="MOD_CUSTOMSHOW_DEFAULT_OHBUTTON"
 				/>
 				<field
 					name="ohbutton"
 					type="text"
 					label="MOD_CUSTOMSHOW_OHBUTTON_LABEL"
 					description="MOD_CUSTOMSHOW_OBUTTON_DESC"
+					default="MOD_CUSTOMSHOW_OHBUTTON_DEFAULT"
+				/>
+				<field 
+					name="mymenuitem" 
+					type="menuitem"
+					label="Select a menu item" 
+					description="Select a menu item"
+					published="1"
 				/>
 			</fieldset>
 

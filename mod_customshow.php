@@ -13,6 +13,7 @@ defined('_JEXEC') or die;
 require_once __DIR__.'/helper/helper.php';
 
 $prepare = CustomShowHelper::prepare($params);
+$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
 if($prepare){
 	require JModuleHelper::getLayoutPath('mod_customshow', $params->get('layout','default'));

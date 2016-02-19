@@ -12,12 +12,9 @@ defined('_JEXEC') or die;
 
 ?>
 
-
-
-<div class="item isotope-item even" style="">
+<div class="item isotope-item even <?php echo $moduleclass_sfx; ?>" style="">
 	<!-- Article -->
-	<!-- url('/siamwalla/funsecondlife/images/funsecondlife/default.jpg') -->
-	<article itemscope="" itemtype="http://schema.org/Article" style="min-height: 272px; background-image: url('<?php echo $params->get('bgimg'); ?>')">
+	<article itemscope="" itemtype="http://schema.org/Article" style="min-height: 272px; background-image: <?php echo $params->get('bgimg_fin'); ?>">
 		<div class="item-image front">
 		</div>
 		<div class="item-show front">
@@ -26,7 +23,7 @@ defined('_JEXEC') or die;
 			</div>
 			<header class="article-header clearfix">
 				<h2 itemprop="name" class="article-title">
-					<a title="<?php echo $params->get('head') ;?>" itemprop="url" href="/siamwalla/funsecondlife/index.php?option=com_content&amp;view=article&amp;id=2:about-us&amp;catid=12&amp;Itemid=113">
+					<a title="<?php echo $params->get('head') ;?>" itemprop="url" href="<?php echo  $params->get('comlink') ; ?>">
 						<?php echo $params->get('content') ;?>
 					</a>
 				</h2>
@@ -41,7 +38,7 @@ defined('_JEXEC') or die;
 				<!-- footer -->
 				<!-- //footer -->
 				<section class="readmore">
-					<a title="<?= $params->get('ohbutton') ?>" itemprop="url" href="/siamwalla/funsecondlife/index.php?option=com_content&amp;view=article&amp;id=2:about-us&amp;catid=12&amp;Itemid=113" target="_blank">
+					<a title="<?= $params->get('ohbutton') ?>" itemprop="url" href="<?php echo  $params->get('comlink') ; ?>" target="_blank">
 						<span><?php echo $params->get('ohbutton') ;?></span>
 					</a>
 				</section>
