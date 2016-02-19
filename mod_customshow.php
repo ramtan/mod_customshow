@@ -11,3 +11,9 @@ defined('_JEXEC') or die;
 
 //include the helper file
 require_once __DIR__.'/helper/helper.php';
+
+$prepare = CustomShowHelper::prepare($params);
+
+if($prepare){
+	require JModuleHelper::getLayoutPath('mod_customshow', $params->get('layout','default'));
+}

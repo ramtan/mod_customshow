@@ -11,6 +11,12 @@ defined('_JEXEC') or die;
 
 class CustomShowHelper{
 
+	public static function prepare($params){
+		
+		if($params->get('head')){
+			return true;
+		}
 
+	}
 
 }
