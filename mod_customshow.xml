@@ -16,7 +16,7 @@
 		<folder>helper</folder>
 		<folder>tmpl</folder>
 		<filename>index.html</filename>
-		<filename>mod_smartwelcome.xml</filename>
+		<filename>mod_mod_customshow.xml</filename>
 	</files>
 	<languages>
 		<language tag="en-GB">language/en-GB.mod_customshow.ini</language>
