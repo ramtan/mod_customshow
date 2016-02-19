@@ -62,7 +62,6 @@
 				<field
 					name="ohbutton"
 					type="text"
-					default="MOD_CUSTOMSHOW_DEFAULT_OHBUTTON"
 					label="MOD_CUSTOMSHOW_OHBUTTON_LABEL"
 					description="MOD_CUSTOMSHOW_OBUTTON_DESC"
 				/>
