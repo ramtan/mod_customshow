@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4.8" client="site" method="upgrade">
+	<name>MOD_CUSTOMSHOW</name>
+	<creationDate>Today</creationDate>
+	<author>Non</author>
+	<authorEmail>Non@non.com</authorEmail>
+	<authorUrl>http://www.Nnon.org</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>MOD_CUSTOMSHOW_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_customshow">mod_customshow.php</filename>
+		<folder>helper</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_smartwelcome.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_customshow.ini</language>
+		<language tag="en-GB">language/en-GB.mod_customshow.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="beforehover">
+				<field
+					name="head"
+					type="text"
+					default="MOD_CUSTOMSHOW_DEFAULT_HEAD"
+					label="MOD_CUSTOMSHOW_HEAD_LABEL"
+					description="MOD_CUSTOMSHOW_HEAD_DESC"
+				/>
+				<field
+					name="content"
+					type="textarea"
+					label="MOD_CUSTOMSHOW_CONTENT_LABEL"
+					description="MOD_CUSTOMSHOW_CONTENT_DESC"
+				/>
+				<field
+					name="bgimg"
+					type="media"
+					label="MOD_CUSTOMSHOW_BGIMG_LABEL"
+					description="MOD_CUSTOMSHOW_BGIMG_DESC"
+				/>
+			</fieldset>
+
+			<!-- ON HOVER TAB -->
+			<fieldset name="onhover">
+				<field
+					name="ohhead"
+					type="text"
+					default="MOD_CUSTOMSHOW_DEFAULT_OHHEAD"
+					label="MOD_CUSTOMSHOW_OHHEAD_LABEL"
+					description="MOD_CUSTOMSHOW_OHHEAD_DESC"
+				/>
+				<field
+					name="ohcontent"
+					type="textarea"
+					label="MOD_CUSTOMSHOW_OHCONTENT_LABEL"
+					description="MOD_CUSTOMSHOW_OHCONTENT_DESC"
+				/>
+				<field
+					name="ohbutton"
+					type="text"
+					default="MOD_CUSTOMSHOW_DEFAULT_OHBUTTON"
+					label="MOD_CUSTOMSHOW_OHBUTTON_LABEL"
+					description="MOD_CUSTOMSHOW_OBUTTON_DESC"
+				/>
+			</fieldset>
+
+			<!-- ADV TAB -->
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_LAYOUT_DESC"
+				/>
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SEX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SEX_DESC"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
