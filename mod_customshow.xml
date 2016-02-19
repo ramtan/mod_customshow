@@ -28,7 +28,6 @@
 				<field
 					name="head"
 					type="text"
-					default="MOD_CUSTOMSHOW_DEFAULT_HEAD"
 					label="MOD_CUSTOMSHOW_HEAD_LABEL"
 					description="MOD_CUSTOMSHOW_HEAD_DESC"
 				/>
@@ -51,7 +50,6 @@
 				<field
 					name="ohhead"
 					type="text"
-					default="MOD_CUSTOMSHOW_DEFAULT_OHHEAD"
 					label="MOD_CUSTOMSHOW_OHHEAD_LABEL"
 					description="MOD_CUSTOMSHOW_OHHEAD_DESC"
 				/>
